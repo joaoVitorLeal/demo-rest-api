@@ -1,3 +1,6 @@
 spring:
   application:
   name: demo-rest-api
+  output:
+    ansi:
+      enabled: ALWAYS # Habilitando cores no console - melhor visualização de logging de erro, warns, etc.

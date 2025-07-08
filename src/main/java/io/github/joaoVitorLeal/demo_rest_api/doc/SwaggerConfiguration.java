@@ -1,0 +1,36 @@
+package io.github.joaoVitorLeal.demo_rest_api.doc;
+
+import io.swagger.v3.oas.annotations.ExternalDocumentation;
+import io.swagger.v3.oas.annotations.OpenAPIDefinition;
+import io.swagger.v3.oas.annotations.info.Contact;
+import io.swagger.v3.oas.annotations.info.Info;
+import io.swagger.v3.oas.annotations.info.License;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration
+@OpenAPIDefinition(
+        info = @Info(
+                title = "Santander Open Academy — REST API Demonstration",
+                version = "1.0.2",
+                description = """
+            This project is a demonstration RESTful API developed using Spring Boot, as part of the DIO and Santander Open Academy initiative.
+            Source code: https://github.com/joaoVitorLeal/demo-rest-api
+            """,
+                termsOfService = "https://opensource.org/licenses/MIT",
+                license = @License(
+                        name = "MIT License",
+                        url = "https://opensource.org/licenses/MIT"
+                ),
+                contact = @Contact(
+                        name = "João Leal",
+                        email = "joaoleal98@outlook.com",
+                        url = "https://github.com/joaoVitorLeal"
+                )
+        ),
+        externalDocs = @ExternalDocumentation(
+                description = "LinkedIn — Professional Profile",
+                url = "https://linkedin.com/in/joaovlc"
+        )
+)
+public class SwaggerConfiguration {
+}

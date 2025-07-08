@@ -37,6 +37,11 @@ public class CustomerController {
         return repository.findAll();
     }
 
+    @PutMapping()
+    public void update(@RequestBody Customer customer) {
+        repository.save(customer);
+    }
+
     @DeleteMapping("/{id}")
     public void delete(@PathVariable(name = "id") Integer id) {
         repository.deleteById(id);

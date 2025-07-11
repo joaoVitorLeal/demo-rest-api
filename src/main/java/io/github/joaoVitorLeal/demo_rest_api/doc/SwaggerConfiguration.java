@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 @OpenAPIDefinition(
         info = @Info(
                 title = "Santander Open Academy — REST API Demonstration",
-                version = "1.0.2",
+                version = "1.1.0",
                 description = """
             This project is a demonstration RESTful API developed using Spring Boot, as part of the DIO and Santander Open Academy initiative.
             Source code: https://github.com/joaoVitorLeal/demo-rest-api
